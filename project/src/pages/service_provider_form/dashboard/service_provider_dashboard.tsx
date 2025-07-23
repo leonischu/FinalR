@@ -887,7 +887,7 @@ const ServiceProviderDashboard = () => {
             <button
               key={item.id}
               onClick={() => {
-                setActiveTab(item.id);
+                navigate(`/service-provider-dashboard/${item.id}`);
                 setSidebarOpen(false);
               }}
               className={`w-full flex items-center px-6 py-4 rounded-xl transition-all duration-300 group ${

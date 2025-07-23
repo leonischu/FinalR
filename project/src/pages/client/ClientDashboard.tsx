@@ -1608,12 +1608,11 @@ navigate('/dashboard')
 
         <nav className="space-y-2">
           {navigationItems.map((item) => (
-            <Link
-              to={item.path}
+            <button
               key={item.id}
               onClick={() => {
-                setActiveTab(item.id)
-                setSidebarOpen(false) // Close sidebar on mobile after clicking a link
+                navigate(item.path);
+                setSidebarOpen(false); // Close sidebar on mobile after clicking a link
               }}
               className={`w-full flex items-center px-6 py-4 rounded-xl transition-all duration-300 group ${
                 activeTab === item.id
@@ -1630,7 +1629,7 @@ navigate('/dashboard')
               </div>
               <span className="font-semibold">{item.name}</span>
               {activeTab === item.id && <ChevronRight className="w-5 h-5 ml-auto" />}
-            </Link>
+            </button>
           ))}
         </nav>
 
