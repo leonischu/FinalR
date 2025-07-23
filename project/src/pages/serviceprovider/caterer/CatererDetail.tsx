@@ -849,7 +849,7 @@ const CatererDetail = () => {
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <Link
-              to="/client-dashboard"
+              to="/client-dashboard/browse"
               className="btn-text inline-flex items-center gap-2 hover:bg-slate-100 rounded-lg px-3 py-2"
             >
               <ArrowLeft className="w-4 h-4" /> Back to Dashboard
